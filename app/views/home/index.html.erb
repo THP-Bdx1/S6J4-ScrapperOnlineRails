@@ -11,6 +11,10 @@
   <br>
   <br>
   <br>
+  <%= form_for @crypto1, :class => "form-group", url: {action: 'reset'} do |f| %>
+  <%= f.submit "Reset", :class => "btn btn-primary" %>
+  <% end %>
+
   <br>
   <br>
 <div class="cryptobutton"><button class="btn btn-info btn-xs" onclick="myFunction()">Clique ici pour avoir la liste des cryptomonnaies</button></div>

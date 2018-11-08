@@ -21,4 +21,11 @@ class HomeController < ApplicationController
   def show
   end
 
+  def reset
+    Crypto.destroy_all
+    ActiveRecord::Base.connection.reset_pk_sequence!("cryptos")
+    StartScrapp.new.perform
+  end
+
 end
+  
