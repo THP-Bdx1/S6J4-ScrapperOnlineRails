@@ -5,8 +5,8 @@ class HomeController < ApplicationController
     if @crypto == nil
     StartScrapp.new.perform
     else
-    Crypto.destroy_all
-    StartScrapp.new.perform
+    # Crypto.destroy_all
+    # StartScrapp.new.perform
     end
   end
 
@@ -14,7 +14,7 @@ class HomeController < ApplicationController
 
   redirect_to "/home/#{params[:crypto][:id]}"
   end
-  
+
   def show
   end
 

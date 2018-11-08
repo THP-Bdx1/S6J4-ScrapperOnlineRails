@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: black;
+  background-image: url("http://image.noelshack.com/fichiers/2018/45/4/1541693511-bitcoin-black-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left bottom;
+
+  color: #FEFDFD;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.nifty_form {
+  margin-left: 35%;
+  margin-right: 35%;
+
+}
+
+.submitsearch {
+  text-align: center;
+  padding-left: 73%;
+}
+
+.cryptobutton {
+  text-align: center;
+}
+
+#cryptolist {
+  text-align: right;
+}

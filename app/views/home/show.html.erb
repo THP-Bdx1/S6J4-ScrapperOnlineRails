@@ -1,1 +1,13 @@
-<p><%=Crypto.find(params[:id]).crypto_name%>, <%=Crypto.find(params[:id]).crypto_value %></p>
+<body>
+  <br>
+  <h1>Tu as sélectionné la Cryptomonnaie <%=Crypto.find(params[:id]).crypto_name%></h1>
+  <br>
+  <h2>En ce moment, elle vaut <%=Crypto.find(params[:id]).crypto_value %></h2>
+  <br>
+  <br>
+  <br>
+
+  <div class="submitsearch"><a href="/"><button class="btn btn-danger">Retour à la liste</button></a></div>
+
+
+</body>

@@ -1,10 +1,40 @@
-<body style="padding-left:10px;padding-right:10px;">
-<h1> Tu peux rechercher ta crypto en tappant son nom dans ce formulaire </h1>
-<%= form_for @crypto1, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-    <%= f.collection_select :id, Crypto.order(:crypto_name),:id,:crypto_name, {include_blank: false}, {class: "form-control"} %>
-    <%= f.submit "Search" %>
-  <% end %>
+<body>
+  <br>
+  <h1>Bienvenue dans la Crypte aux Monnaies !</h1>
+  <h2>Tu peux rechercher ta crypto parmi celles disponibles ci-dessous.</h2>
+  <br>
+  <%= form_for @crypto1, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+      <%= f.collection_select :id, Crypto.order(:crypto_name),:id,:crypto_name, {include_blank: false}, {class: "form-control"} %>
+      <br>
+      <div class="submitsearch"><%= f.submit "Rechercher", {class: "btn btn-danger"} %></div>
+    <% end %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="cryptobutton"><button class="btn btn-info btn-xs" onclick="myFunction()">Clique ici pour avoir la liste des cryptomonnaies</button></div>
+  <div id="cryptolist" style="display: none;">
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Nom crypto</td>
+                <td>Valeur crypto</td>
+            </tr>
+        </thead>
+    <tbody>
+        <% @crypto.each do |crypto| %>
+        <tr>
+            <td><%= crypto.crypto_name %></td>
+            <td><%= crypto.crypto_value %></td>
+            <td>
+            <% end %>
+        </tbody>
+    </table>
+  </div>
 
+<!--
 <h1> Sinon elles sont listées ici et si t'es malin tu fait un ctrl+f ;) </h1>
 <h1>Les cryptos ! <img src="http://image.noelshack.com/fichiers/2018/44/4/1541101054-wineload.gif" height="60" width="60"></h1>
 <table class="table">
@@ -13,7 +43,7 @@
             <td>Nom crypto</td>
             <td>Valeur crypto</td>
         </tr>
-    </thead>       
+    </thead>
 <tbody>
     <% @crypto.each do |crypto| %>
     <tr>
@@ -22,4 +52,6 @@
         <td>
         <% end %>
     </tbody>
-</table>
+</table> -->
+
+</body>
