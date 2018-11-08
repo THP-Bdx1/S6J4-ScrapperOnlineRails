@@ -26,7 +26,7 @@ Le but de ce projet est de réaliser un site web contenant une **application de 
 
 
 
-Vous pouvez retrouver le site en production en **cliquant sur cette image** : [![image-lien-site](https://cultofthepartyparrot.com/parrots/hd/gentlemanparrot.gif)](http://www.google.com)
+Vous pouvez retrouver le site en production en **cliquant sur cette image** : [![image-lien-site](https://cultofthepartyparrot.com/parrots/hd/gentlemanparrot.gif =40x40)](http://www.google.com)
 
 
 
