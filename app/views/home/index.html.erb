@@ -2,6 +2,9 @@
   <br>
   <h1>Bienvenue dans la Crypte aux Monnaies !</h1>
   <h2>Tu peux rechercher ta crypto parmi celles disponibles ci-dessous.</h2>
+  <div title="Attention, c'est long !" class="resetbutton"><%= form_for @crypto1, :class => "form-group", url: {action: 'reset'} do |f| %>
+  <%= f.submit "Rafraîchir les cryptomonnaies", :class => "btn btn-warning btn-sm" %>
+  <% end %></div>
   <br>
   <%= form_for @crypto1, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
       <%= f.collection_select :id, Crypto.order(:crypto_name),:id,:crypto_name, {include_blank: false}, {class: "form-control"} %>
@@ -11,9 +14,8 @@
   <br>
   <br>
   <br>
-  <%= form_for @crypto1, :class => "form-group", url: {action: 'reset'} do |f| %>
-  <%= f.submit "Reset", :class => "btn btn-primary" %>
-  <% end %>
+
+
 
   <br>
   <br>

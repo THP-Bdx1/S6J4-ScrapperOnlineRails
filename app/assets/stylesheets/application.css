@@ -26,21 +26,28 @@ body {
 
 h1 {
   text-align: center;
+  font-family: Impact;
 }
 
 h2 {
   text-align: center;
+  font-family: Courier;
 }
 
 .nifty_form {
   margin-left: 35%;
   margin-right: 35%;
-
 }
 
 .submitsearch {
   text-align: center;
   padding-left: 73%;
+}
+
+.resetbutton {
+  text-align: center;
+  padding-left: 75%;
+  size: 75%;
 }
 
 .cryptobutton {
