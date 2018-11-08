@@ -12,7 +12,7 @@ Quand on arrive dans le dance floor, tout le monde [se met à l'aise](https://ww
 
 Le but de ce projet est de réaliser un site web contenant une **application de scrapping de cryptomonnaies et leur valeur**.
 
-Vous pouvez retrouver le site en production en **cliquant sur cette image** : [<img src="https://cultofthepartyparrot.com/parrots/hd/gentlemanparrot.gif" width="40" height="40")](https://scrapper-comme-jamais.herokuapp.com/)
+Vous pouvez retrouver le site en production en **cliquant sur cette image** : [<img src="https://cultofthepartyparrot.com/parrots/hd/gentlemanparrot.gif" width="40" height="40">](https://scrapper-comme-jamais.herokuapp.com/)
 
 ---
 ## CAHIER DES CHARGES
